@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.a1694670.michael.bookstore.SingleBook">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                >
+<TableRow android:layout_marginBottom="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SingleBookImage"
+        android:src="@drawable/fallout"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SingleBookName"
+        android:text="Book Name"
+        android:layout_marginLeft="20dp"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+
+        />
+</TableRow>
+
+                <TableRow android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Author:"
+                        android:textSize="25sp"
+                        android:textColor="@color/blacttext"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/greytext"
+                        android:text="Author Name"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/authorName"
+                        />
+                </TableRow>
+                <TableRow android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category:"
+                        android:textSize="25sp"
+                        android:textColor="@color/blacttext"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/greytext"
+                        android:text="Categories"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/category"
+                        />
+                </TableRow>
+                <TableRow android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Publisher:"
+                        android:textSize="25sp"
+                        android:textColor="@color/blacttext"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/greytext"
+                        android:text="Publisher"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/publisher"
+                        />
+                </TableRow>
+                <TableRow android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date:"
+                        android:textSize="25sp"
+                        android:textColor="@color/blacttext"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/greytext"
+                        android:text="Date"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/date"
+                        />
+                </TableRow>
+                <TableRow android:layout_marginBottom="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity:"
+                        android:textSize="25sp"
+                        android:textColor="@color/blacttext"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25sp"
+                        android:textColor="@color/greytext"
+                        android:text="Quantity"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/quantity"
+                        />
+                </TableRow>
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="RENT"
+    android:textSize="30dp"
+    android:textAlignment="center"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:id="@+id/RentBtn"
+    android:visibility="gone"
+    android:background="@color/bgpink"
+    android:textColor="@color/whitetext"
+    android:onClick="rent"
+    />
+            </TableLayout>
+</ScrollView>
+</RelativeLayout>
